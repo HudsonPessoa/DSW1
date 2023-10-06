@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Criar conta</title>
+  </head>
+  <body>
+	<header>
+	<article>
+	<h2>Crie uma Nova Conta</h2>
+	</article>
+	</header>
+	
+	<main>
+	<div>
+	<form method="post" action="/login">
+	<fieldset>
+	<h2>Conta</h2>
+	<ol>
+	<label for="nome">Nome:</label>
+	<input id="nome" name="nome"><br>
+	<label for="sobrenome">Sobrenome:</label>
+	<input id="sobrenome" name="sobrenome"><br>
+	<label for="email">E-mail:</label>
+	<input id="email" name="Email"><br>
+	<label for="senha">Senha:</label>
+	<input type="password" id="senha" name="senha"><br>
+	<label for="senha">Repita a senha:</label>
+	<input type="password" id="senha" name="senha"><br>
+	<input type="submit" value="Login">
+	</ol>
+	</fieldset>
+	</form>
+	</div>
+
+	<div>
+	<form method="post" action="/login">
+	<fieldset>
+	<h2>Endereço</h2>
+	<label for="logradouro">Logradouro:</label>
+	<input id="logradouro" name="logradouro"><br>
+	<label for="complemento">Complemento:</label>
+	<input id="complemento" name="complemento"><br>
+	<label for="cidade">Cidade:</label>
+	<input id="cidade" name="cidade"><br>
+	<label for="estado">Selecione um estado:</label>
+	<select id="estado" name="estado">
+	<option value="ac">Acre</option>
+	<option value="al">Alagoas</option>
+	<option value="ap">Amapá</option>
+	<option value="amazonas">Amazonas</option>
+	<option value="ba">Bahia</option>
+	<option value="ce">Ceará</option>
+	<option value="df">Distrito Federal</option>
+	<option value="es">Espírito Santo</option>
+	<option value="go">Goiás</option>
+	<option value="ma">Maranhão</option>
+	<option value="mt">Mato Grosso</option>
+	<option value="ms">Mato grosso do Sul</option>
+	<option value="mg">Minas Gerais</option>
+	<option value="pa">Pará</option>
+	<option value="pb">Paraíba</option>
+	<option value="pr">Paraná</option>
+	<option value="pe">Pernambuco</option>
+	<option value="pi">Piauí</option>
+	<option value="rj">Rio de Janeiro</option>
+	<option value="rn">Rio grande do Norte</option>
+	<option value="rs">Rio grande do Sul</option>
+	<option value="ro">Rondônia</option>
+	<option value="rr">Roraima</option>
+	<option value="sc">Santa Catarina</option>
+	<option value="sp">São Paulo</option>
+	<option value="se">Sergipe</option>
+	<option value="to">Tocantins</option>
+	</select>
+	<br>
+	<label for="cep">CEP:</label>
+	<input type="number" id="cep" name="cep"><br>
+	</fieldset>
+	</div>
+
+	<div>
+	<form method="post" action="/login">
+	<fieldset>
+	<h2>Perfil</h2>
+	<label for="img">Foto:</label>
+	<input type="file">
+	<p> Tamanho máximo de 700k, JPG, GIF PNG. </p>
+	<label for="nome">Nome:</label>
+	<input id="nome" name="nome"><br>
+	<label for="site">Site:</label>
+	<input id="site" name="site"><br>
+	<p> Tem um site ou um blog? Coloque o endereço aqui. </p>
+	<label for="biografia">Biografia:</label>
+	<textarea name="biografia" rows="5" cols="40">
+	</textarea>
+	<br>
+	<label for="genero">Gênero:</label>
+	<label for="masculino">Masculino:</label>
+	<input type="radio" id="masculino" name="masculino" value="Masculino">
+	<label for="feminino">Ferminino:</label>
+	<input type="radio" id="feminino" name="feminino" value="Feminino">
+	<label for="outro">Outro:</label>
+	<input type="radio" id="outro" name="outro" value="Outro">
+	</fieldset>
+	</div>
+
+	<div>
+	<form method="post" action="/login">
+	<fieldset>
+	<h2>E-mails</h2>
+ 	 <input type="checkbox" id="emailusuario" name="emailusuario" value="emailusuario">
+ 	 <label for="emailusuario"> Tudo bem em enviar e-mails com mensagens de outros usuários.</label>
+	<br>
+	 <input type="checkbox" id="emailpromo" name="emailpromo" value="emailpromo">
+ 	 <label for="emailpromo"> Tudo bem em enviar e-mails com promoções sobre outros produtos.</label>
+	</fieldset>
+	</div>
+
+	<div>
+	<form method="post" action="/login">
+	<fieldset>
+	<input type="button" onclick="alert('Conta criada com sucesso!')" value="Criar Conta">
+	</fieldset>
+	</div>
+
+	</main>
+
+  </body>
+</html>
